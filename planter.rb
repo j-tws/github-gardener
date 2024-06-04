@@ -49,8 +49,6 @@ module Planter
       puts "commiting on date #{date}..."
       run_command("cd ../#{repo_name} &&
         git add . &&
-        GIT_COMMITED_DATE='#{date}'
-        GIT_AUTHOR_DATE='#{date}'
         git commit --date='#{date}' -m 'Commited on #{date}'"
       )
     end
